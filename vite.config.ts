@@ -14,6 +14,12 @@ export default defineConfig({
     alias: {
       "@": "/src",
     },
-    tsconfigPaths: true,
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
+  }
 });
